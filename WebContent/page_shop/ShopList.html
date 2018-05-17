@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Shop List</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<!--  <link rel="stylesheet" href="../css/sketchy_bootstrap.min.css"> -->
+<link rel="stylesheet" href="./ShopList.css">
+<link href="https://fonts.googleapis.com/css?family=Lato"
+	rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat"
+	rel="stylesheet" type="text/css">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar"
+	data-offset="50">
+
+	<!-- Navbar Start-->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../page_home/Home.html">Show Me
+					Your Cats</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="../page_home/Home.html">HOME</a></li>
+					<li><a href="../page_board/BoardList.html">BOARD</a></li>
+					<li><a href="../page_shop/ShopList.html">SHOP</a></li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">MEMBER <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="../page_member/Login.html">Log in</a></li>
+							<li><a href="../page_member/Signup.html">Sign Up</a></li>
+							<li><a href="../page_member/MyInfo.html">My Info</a></li>
+						</ul></li>
+					<li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar End -->
+
+	<div class="jumbotron">
+		<div class="container text-center">
+			<h1>Online Store</h1>
+			<p>For Your Cats</p>
+		</div>
+	</div>
+
+	<!-- Main Start -->
+	<div class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">스크래쳐 &nbsp; <span class="badge badge_new">new</span></div>
+						<div class="panel-body">
+							<a href="#"> <img src="../image/item_cat01.jpg"
+								class="img-responsive" style="width: 100%" alt="Image"></a>
+						</div>
+						<div class="panel-footer">123456원</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">캣타워</div>
+						<div class="panel-body">
+							<a href="#"> <img src="../image/item_cat02.jpg"
+								class="img-responsive" style="width: 100%" alt="Image"></a>
+						</div>
+						<div class="panel-footer">123456원</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">장난감</div>
+						<div class="panel-body">
+							<a href="#"> <img src="../image/item_cat03.jpg"
+								class="img-responsive" style="width: 100%" alt="Image"></a>
+						</div>
+						<div class="panel-footer">123456원</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">고양이 집</div>
+						<div class="panel-body">
+							<a href="#"> <img src="../image/item_cat04.jpg"
+								class="img-responsive" style="width: 100%" alt="Image"></a>
+						</div>
+						<div class="panel-footer">123456원</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">고양이 화장실</div>
+						<div class="panel-body">
+							<a href="#"> <img src="../image/item_cat05.jpg"
+								class="img-responsive" style="width: 100%" alt="Image"></a>
+						</div>
+						<div class="panel-footer">123456원</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">고양이 모자</div>
+						<div class="panel-body">
+							<a href="#"> <img src="../image/item_cat06.jpg"
+								class="img-responsive" style="width: 100%" alt="Image"></a>
+						</div>
+						<div class="panel-footer">123456원</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container text-center">
+			<ul class="pagination">
+				<li><a href="#"><</a></li>
+				<li class="active"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">></a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Main End -->
+
+
+
+
+
+	<!-- Footer -->
+	<footer class="text-center">
+		<a class="up-arrow" href="#myPage" data-toggle="tooltip"
+			title="TO TOP"> <span class="glyphicon glyphicon-chevron-up"></span>
+		</a><br> <br>
+		<p>
+			Bootstrap Theme Made By <a href="https://www.w3schools.com"
+				data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a>
+		</p>
+	</footer>
+
+	<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
