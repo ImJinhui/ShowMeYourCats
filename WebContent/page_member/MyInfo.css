@@ -59,7 +59,20 @@ h3, h4 {
 	background-color: #ff8080 !important;
 }
 /*Navbar End*/
+/*Main start*/
 
+.btn-default{
+	background-color: #ff8080;
+	color:#fff;
+	border: none;
+}
+
+.btn-default:hover{
+	background-color: #ff6666;
+	color:#fff;
+}
+
+/*Main end*/
 
 .container {
 	padding: 80px 120px;
