@@ -13,6 +13,36 @@
 	rel="stylesheet" type="text/css">
 <script src="../js/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+
+
+<script>
+
+$(function(){
+
+	var CheckEmail = RegExp(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/);
+
+	$(".btn").click(function(){
+
+		if($("#emailid").val() < 10){
+			alert("아이디 10자 이상 입력 바람");
+		}
+
+		if($("#emailid").value.length < 10){
+			alert("아이디 10자 이상 입력 바람");
+		}
+
+
+		if(!CheckEmail.test($("#emailid").val())){
+			alert("아이디 형식에 맞게 입력 바람");
+		}
+
+
+	});
+});
+
+</script>
+
+
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar"
 	data-offset="50">
@@ -165,8 +195,8 @@
 	<script>
 $(document).ready(function(){
   // Initialize Tooltip
-  $('[data-toggle="tooltip"]').tooltip(); 
-  
+  $('[data-toggle="tooltip"]').tooltip();
+
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
@@ -184,7 +214,7 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 900, function(){
-   
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
