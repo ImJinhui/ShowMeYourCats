@@ -107,7 +107,7 @@ public class SignUpServlet extends HttpServlet {
 				"					</h1>\r\n" + 
 				"					<hr>\r\n" + 
 				"					<form class=\"form-horizontal\" method=\"POST\" name=\"signup\"\r\n" + 
-				"						id=\"signup\" enctype=\"multipart/form-data\" action=\""+host+"/SignUpStatusServlet\">\r\n" + 
+				"						id=\"signup\" action=\""+host+"/SignUpStatusServlet\">\r\n" + 
 				"						<div class=\"form-group\">\r\n" + 
 				"							<label class=\"control-label col-sm-3\">Email ID <span\r\n" + 
 				"								class=\"text-danger\">*</span></label>\r\n" + 
